@@ -29,8 +29,10 @@ controller_projects:
     scm_update_on_launch: "yes"
     scm_url: 'https://github.com/hybrid-cloud-demos/agof_minimal_demo.git'
 
-organizations:
+controller_organizations:
   - name: '{{ orgname_vault }}'
+
+organizations: "{{ controller_organizations }}"
 
 controller_inventories:
   - name: 'AGOF Demo Inventory'
